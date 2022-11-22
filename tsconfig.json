@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "declaration": true,
+    "declarationDir": "./build",
+    "jsx": "react",
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "useDefineForClassFields": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "typeRoots": ["./typings"],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "include": [".", "src/**/*", "./typings", "declaration.d.ts"]
+}

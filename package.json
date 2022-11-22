@@ -7,8 +7,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "build": "rm -rf build && rollup -c",
     "start": "start-storybook -p 6006 -s public",
+    "build": "rm -rf build && rollup -c",
+    "build:sb": "rm -rf storybook-static && build-storybook",
     "clear": "rm -rf node_modules build",
     "reinstall": "yarn clear && yarn"
   },
@@ -31,6 +32,7 @@
     "babel-preset-react-app": "^10.0.1",
     "classnames": "^2.3.2",
     "install-peers": "^1.0.4",
+    "postcss": "^8.4.19",
     "rollup": "^2.79.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

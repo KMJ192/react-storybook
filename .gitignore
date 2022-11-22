@@ -2,5 +2,5 @@
 .yarn/install-state.gz
 
 build
-
+storybook-static
 node_modules

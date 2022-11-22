@@ -8,4 +8,5 @@ const buttonType: ButtonType = {
   SECONDARY: 'secondary',
 };
 
-export { ButtonType, buttonType };
+export { buttonType };
+export type { ButtonType };

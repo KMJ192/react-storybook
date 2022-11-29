@@ -3244,7 +3244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:^2.0.0":
+"@vitejs/plugin-react@npm:^2.0.0, @vitejs/plugin-react@npm:^2.2.0":
   version: 2.2.0
   resolution: "@vitejs/plugin-react@npm:2.2.0"
   dependencies:
@@ -4878,7 +4878,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -9960,6 +9960,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"narrowing@npm:^1.4.0":
+  version: 1.5.0
+  resolution: "narrowing@npm:1.5.0"
+  checksum: dc515cff57e3c506c6eb6c9bbfda99c19c1ef1f46f4a2c2185fe7fdaec90c2d7fc8299d830f9865c6bc4cbe978b306a00feded184a4c236b88bfd37f75470fa9
+  languageName: node
+  linkType: hard
+
 "natural-compare@npm:^1.4.0":
   version: 1.4.0
   resolution: "natural-compare@npm:1.4.0"
@@ -11858,6 +11865,7 @@ __metadata:
     "@types/react": 18.0.25
     "@types/react-dom": ^18.0.6
     "@types/rollup-plugin-peer-deps-external": ^2.2.1
+    "@vitejs/plugin-react": ^2.2.0
     autoprefixer: ^10.4.8
     babel-preset-react-app: ^10.0.1
     classnames: ^2.3.2
@@ -11875,6 +11883,7 @@ __metadata:
     typescript: ^4.8.4
     typescript-plugin-css-modules: ^3.4.0
     vite: ^3.2.4
+    vite-plugin-wasm-pack: ^0.1.12
   languageName: unknown
   linkType: soft
 
@@ -14196,6 +14205,17 @@ __metadata:
     unist-util-stringify-position: ^2.0.0
     vfile-message: ^2.0.0
   checksum: ee5726e10d170472cde778fc22e0f7499caa096eb85babea5d0ce0941455b721037ee1c9e6ae506ca2803250acd313d0f464328ead0b55cfe7cb6315f1b462d6
+  languageName: node
+  linkType: hard
+
+"vite-plugin-wasm-pack@npm:^0.1.12":
+  version: 0.1.12
+  resolution: "vite-plugin-wasm-pack@npm:0.1.12"
+  dependencies:
+    chalk: ^4.1.2
+    fs-extra: ^10.0.0
+    narrowing: ^1.4.0
+  checksum: 78a93049c83c15089bce849e6323483a2533b89a9f1a029840f2af8350f08afd8ad87f75192f1dc82e3627d251fbb9baf4fe86b63231f376721efc5dc3b4731d
   languageName: node
   linkType: hard
 

@@ -2,11 +2,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@wasm/*": ["wasm_module/*"]
     },
     "declaration": true,
     "declarationDir": "./build",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "useDefineForClassFields": true,

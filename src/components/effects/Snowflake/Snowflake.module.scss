@@ -1,0 +1,34 @@
+.snowflake {
+  position: fixed;
+  border-radius: 50%;
+  top: -5vh;
+  box-shadow: rgb(221, 221, 221) 0px 0px 4px 3px;
+  z-index: 9999;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+@for $i from 1 to 100 {
+  .snowflake:nth-child(#{$i}) {
+    --size: #{randomNum(0, 0.5)}vw;
+    --left-ini: #{randomNum(-10, 10)}vw;
+    --left-end: #{randomNum(-10, 10)}vw;
+    left: #{randomNum(0, 100)}vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: #{randomNum(-50, 0)}s;
+  }
+}

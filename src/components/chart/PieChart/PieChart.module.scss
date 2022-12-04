@@ -7,9 +7,9 @@
 
   .pie-chart {
     width: var(--width);
-    // display: inline-grid;
-    // aspect-ratio: 1;
-    // place-content: center;
+    display: inline-grid;
+    aspect-ratio: 1;
+    place-content: center;
     position: relative;
 
     font-size: 16px;
@@ -29,7 +29,7 @@
   .pie-chart::before {
     inset: 0;
     background:
-      radial-gradient(farthest-side, var(--data-color) 98%, #0000) top/var(--bold) var(--bold) no-repeat,
+      radial-gradient(farthest-side, var(--data-color) 98%, #0000) top / var(--bold) var(--bold) no-repeat,
       conic-gradient(var(--data-color) calc(var(--per) * 1%), #0000 0);
     -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--bold)), #000 calc(100% - var(--bold)));
     mask: radial-gradient(farthest-side, #0000 calc(99% - var(--bold)), #000 calc(100% - var(--bold)));
@@ -37,9 +37,27 @@
   .pie-chart::after {
     inset: calc(50% - var(--bold)/2);
     background: var(--data-color);
-    transform: rotate(calc(var(--per)*3.6deg)) translateY(calc(50% - var(--width)/2));
+    transform: rotate(calc(var(--per) * 3.6deg)) translateY(calc(50% - var(--width) / 2));
+  }
+  .chart-back {
+    // --w: 140px;
+    // width: var(--w);
+    width: 140px;
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-content: center;
+    position: absolute;
   }
   
+  .chart-back::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(rgba(0, 0, 0, 0.1) 100%,#0000 0);
+    mask: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(99% - 10px));
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(99% - 10px));
+  }
 }
 
 @property --per {
@@ -52,12 +70,4 @@
   from {
     --per: 0
   }
-}
-
-.test::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  inset: 0;
-  
 }

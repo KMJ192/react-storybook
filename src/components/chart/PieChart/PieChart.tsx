@@ -8,11 +8,13 @@ const cx = classNames.bind(style);
 
 type Props = {
   type: 'canvas' | 'css';
-  customStyle?: CSSProperties;
+
+  // customStyle?: CSSProperties;
 };
 
 // https://www.freecodecamp.org/news/css-only-pie-chart/
-function PieChart({ type, customStyle }: Props) {
+
+function PieChart({ type }: Props) {
   // import('@wasm/pkg').then(async (wasm) => {
   //   (await wasm.default()).console();
   // });
@@ -31,21 +33,14 @@ function PieChart({ type, customStyle }: Props) {
 
   return (
     <div className={cx('chart-body')}>
-      {/* <div className={cx('chart-back')}></div>
-      <div
-        ref={chartRef}
-        className={cx('pie-chart', 'animation')}
-        style={customStyle}
-      >
+      <div ref={chartRef} className={cx('pie-chart', 'animation')} style={{}}>
         60%
-      </div> */}
-      <div className={cx('test')}></div>
+      </div>
+      <div className={cx('chart-back')}></div>
     </div>
   );
 }
 
-PieChart.defaultProps = {
-  customStyle: undefined,
-};
+PieChart.defaultProps = {};
 
 export default PieChart;

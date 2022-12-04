@@ -5,7 +5,7 @@ import Button from './Button';
 import { buttonType } from './types';
 
 export default {
-  title: 'Button',
+  title: 'UI/Button',
   component: Button,
   parameters: {
     componentSubtitle: 'Button',

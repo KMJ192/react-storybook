@@ -46,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["autoprefixer", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:10.4.13"],\
             ["babel-preset-react-app", "npm:10.0.1"],\
             ["classnames", "npm:2.3.2"],\
+            ["csstype", "npm:3.1.1"],\
             ["install-peers", "npm:1.0.4"],\
             ["postcss", "npm:8.4.19"],\
             ["react", "npm:18.2.0"],\
@@ -16838,6 +16839,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["autoprefixer", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:10.4.13"],\
             ["babel-preset-react-app", "npm:10.0.1"],\
             ["classnames", "npm:2.3.2"],\
+            ["csstype", "npm:3.1.1"],\
             ["install-peers", "npm:1.0.4"],\
             ["postcss", "npm:8.4.19"],\
             ["react", "npm:18.2.0"],\

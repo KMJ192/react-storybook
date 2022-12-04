@@ -1,13 +1,19 @@
+import { Story } from '@storybook/react';
+
 import PieChart from './PieChart';
+import { PieChartArgs } from './types';
 
 export default {
-  title: 'PieChart',
+  title: 'Chart/PieChart',
   component: PieChart,
   parameters: {
     componentSubtitle: 'PieChart',
   },
 };
 
-export const pieChart = (): JSX.Element => {
-  return <PieChart />;
+const pieChartTemplate = (args: PieChartArgs) => <PieChart {...args} />;
+
+export const cssPieChart: Story<PieChartArgs> = pieChartTemplate.bind({});
+cssPieChart.args = {
+  type: 'css',
 };

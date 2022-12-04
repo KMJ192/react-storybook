@@ -1,7 +1,7 @@
 import Snowflake from './Snowflake';
 
 export default {
-  title: 'Snowflake',
+  title: 'Effects/Snowflake',
   component: Snowflake,
   parameters: {
     componentSubtitle: 'Snowflake',

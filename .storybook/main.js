@@ -1,5 +1,4 @@
 const path = require('path');
-const react = require('@vitejs/plugin-react');
 const wasmPack = require('vite-plugin-wasm-pack');
 
 module.exports = {

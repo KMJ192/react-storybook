@@ -3244,7 +3244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:^2.0.0, @vitejs/plugin-react@npm:^2.2.0":
+"@vitejs/plugin-react@npm:^2.0.0":
   version: 2.2.0
   resolution: "@vitejs/plugin-react@npm:2.2.0"
   dependencies:
@@ -11865,7 +11865,6 @@ __metadata:
     "@types/react": 18.0.25
     "@types/react-dom": ^18.0.6
     "@types/rollup-plugin-peer-deps-external": ^2.2.1
-    "@vitejs/plugin-react": ^2.2.0
     autoprefixer: ^10.4.8
     babel-preset-react-app: ^10.0.1
     classnames: ^2.3.2

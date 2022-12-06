@@ -1,3 +1,5 @@
+@import 'src/styles/utils.scss';
+
 .snowflake {
   position: fixed;
   border-radius: 50%;
@@ -15,20 +17,13 @@
   }
 }
 
-@function randomNum($min, $max) {
-  $rand: random();
-  $randomNum: $min + floor($rand * (($max - $min) + 1));
-
-  @return $randomNum;
-}
-
 @for $i from 1 to 100 {
   .snowflake:nth-child(#{$i}) {
-    --size: #{randomNum(0, 0.5)}vw;
+    // --size: #{randomNum(0, 0.5)}vw;
     --left-ini: #{randomNum(-10, 10)}vw;
     --left-end: #{randomNum(-10, 10)}vw;
     left: #{randomNum(0, 100)}vw;
-    animation: snowfall 12s linear infinite;
+    animation: snowfall 16s linear infinite;
     animation-delay: #{randomNum(-50, 0)}s;
   }
 }

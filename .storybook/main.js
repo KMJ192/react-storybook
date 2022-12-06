@@ -3,7 +3,11 @@ const wasmPack = require('vite-plugin-wasm-pack');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../**/*.stories.tsx'],
-  addons: [],
+  addons: [
+    '@storybook/addon-docs',
+    '@storybook/addon-actions',
+    '@storybook/addon-controls',
+  ],
   core: {
     builder: '@storybook/builder-vite',
   },

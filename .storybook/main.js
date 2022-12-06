@@ -7,6 +7,7 @@ module.exports = {
     '@storybook/addon-docs',
     '@storybook/addon-actions',
     '@storybook/addon-controls',
+    'storybook-dark-mode',
   ],
   core: {
     builder: '@storybook/builder-vite',

@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup-plugin-terser", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:7.0.2"],\
             ["rollup-plugin-typescript2", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:0.33.0"],\
             ["sass", "npm:1.56.1"],\
+            ["storybook-dark-mode", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:2.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
             ["typescript-plugin-css-modules", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:3.4.0"],\
             ["vite", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:3.2.4"],\
@@ -18200,6 +18201,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rollup-plugin-terser", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:7.0.2"],\
             ["rollup-plugin-typescript2", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:0.33.0"],\
             ["sass", "npm:1.56.1"],\
+            ["storybook-dark-mode", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:2.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
             ["typescript-plugin-css-modules", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:3.4.0"],\
             ["vite", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:3.2.4"],\
@@ -19546,6 +19548,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/store2-npm-2.14.2-c286d27e4f-6f270fc5ba.zip/node_modules/store2/",\
           "packageDependencies": [\
             ["store2", "npm:2.14.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["storybook-dark-mode", [\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/storybook-dark-mode-npm-2.0.3-805dd2ef6a-2daae2aaaa.zip/node_modules/storybook-dark-mode/",\
+          "packageDependencies": [\
+            ["storybook-dark-mode", "npm:2.0.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:2.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/storybook-dark-mode-virtual-fa3339828a/0/cache/storybook-dark-mode-npm-2.0.3-805dd2ef6a-2daae2aaaa.zip/node_modules/storybook-dark-mode/",\
+          "packageDependencies": [\
+            ["storybook-dark-mode", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:2.0.3"],\
+            ["@storybook/addons", "virtual:76d10c1209128c8bb253edabfbe210a136eae6b5cf99143a0a850e3bebe30b272588119fddc389a50cbacc43b1a404c3c1c46cf53b0b33bad0c697fa50990ca3#npm:6.5.14"],\
+            ["@storybook/api", "virtual:76d10c1209128c8bb253edabfbe210a136eae6b5cf99143a0a850e3bebe30b272588119fddc389a50cbacc43b1a404c3c1c46cf53b0b33bad0c697fa50990ca3#npm:6.5.14"],\
+            ["@storybook/components", "virtual:76d10c1209128c8bb253edabfbe210a136eae6b5cf99143a0a850e3bebe30b272588119fddc389a50cbacc43b1a404c3c1c46cf53b0b33bad0c697fa50990ca3#npm:6.5.14"],\
+            ["@storybook/core-events", "npm:6.5.14"],\
+            ["@storybook/theming", "virtual:76d10c1209128c8bb253edabfbe210a136eae6b5cf99143a0a850e3bebe30b272588119fddc389a50cbacc43b1a404c3c1c46cf53b0b33bad0c697fa50990ca3#npm:6.5.14"],\
+            ["@types/react", "npm:18.0.25"],\
+            ["@types/react-dom", "npm:18.0.9"],\
+            ["fast-deep-equal", "npm:3.1.3"],\
+            ["global", "npm:4.4.0"],\
+            ["memoizerific", "npm:1.11.3"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:8b1a035246ae85ff837f9f05dcef04a17c014e110c1391de288c07b209c57a7ebb5ec7a4f19f59b1170d9da947432b7c5315fc3bf19a13a44b080b809e82a7c1#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

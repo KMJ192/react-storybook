@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import style from './Snowflake.module.scss';
+import style from './style.module.scss';
 const cx = classNames.bind(style);
 
 type Props = {

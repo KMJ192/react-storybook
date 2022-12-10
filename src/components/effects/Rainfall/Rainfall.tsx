@@ -1,7 +1,7 @@
 import type { Properties as CSSType } from 'csstype';
 
 import classNames from 'classnames/bind';
-import style from './Rainfall.module.scss';
+import style from './style.module.scss';
 const cx = classNames.bind(style);
 
 type Props = {

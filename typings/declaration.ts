@@ -28,4 +28,9 @@
 //   export default content;
 // }
 
-export {};
+declare type Vector = {
+  x: number;
+  y: number;
+};
+
+// export {};

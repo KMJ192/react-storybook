@@ -1,0 +1,48 @@
+@use 'sass:math';
+@import 'src/styles/color.scss';
+
+$width: 40px;
+$height: 24px;
+$slider-width: 16px;
+$slider-height: 16px;
+
+.switch {
+	position: relative;
+	border-radius: 24px;
+	width: $width;
+	height: $height;
+	background-color: #D2D6DE;
+	transition: background-color 0.4;
+	-webkit-transition: background-color 0.4;
+  -moz-transition: background-color 0.4;
+  -o-transition: background-color 0.4;
+	cursor: pointer;
+	&::before {
+		// display: inline-block;
+		content: '';
+		position: absolute;
+		border-radius: 50%;
+		width: $slider-width;
+		height: $slider-height;
+		background-color: #FFFFFF;
+		top: math.div(calc($height - $slider-height), 2);
+		left: 4px;
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+	}
+	&.checked {
+		background-color: #2D76F8 !important;
+		transition: background-color 0.4;
+		-webkit-transition: background-color 0.4;
+		-moz-transition: background-color 0.4;
+		-o-transition: background-color 0.4;
+		&::before {
+			left: calc($width - $slider-width - 4px);
+		}
+	}
+	&.disabled {
+		background-color: #F5F7FA;
+		&::before {
+			background-color: #D2D6DE;
+		}
+	}
+}

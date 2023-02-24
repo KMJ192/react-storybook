@@ -1,0 +1,18 @@
+.nav-group {
+	display: flex;
+	flex-direction: column;
+	visibility: hidden;
+	transition: all 0.2s linear;
+	overflow: hidden;
+	opacity: 0;
+	&.opened {
+		visibility: visible;
+		opacity: 1;
+		&.second-depth {
+			background-color: #E6EAF2;
+			border-radius: 12px 0px 0px 12px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+@mixin down() {
+	&.down {
+
+	}
+}
+
+@mixin up() {
+	&.up {
+		
+	}
+}
+
+@mixin left-down() {
+	&.left-down {
+		
+	}
+}
+
+@mixin left-up() {
+	&.left-up {
+		
+	}
+}
+
+@mixin right-down() {
+	&.right-down {
+		
+	}
+}
+
+@mixin right-up() {
+	&.right-up {
+		
+	}
+}
+
+.list {
+  width: 100%;
+}

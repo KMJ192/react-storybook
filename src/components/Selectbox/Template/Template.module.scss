@@ -1,0 +1,12 @@
+.selectbox {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+
+// @include down();
+// @include up();
+// @include left-down();
+// @include left-up();
+// @include right-down();
+// @include right-up();

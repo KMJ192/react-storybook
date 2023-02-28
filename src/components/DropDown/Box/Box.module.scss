@@ -1,0 +1,55 @@
+@mixin scroll() {
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 4px;
+		border: 1px solid #DCE0E8;
+		background: rgba(220, 224, 232, 0.5);
+	}
+	&::-webkit-scrollbar-corner {
+		display: none;
+	}
+}
+
+@mixin box() {
+	// position: fixed;
+  	background: #FFFFFF;
+	border: 1px solid #E6EAF2;
+	// overflow hidden 일때 box-shadow 작동하지 않는점
+	// position fixed일때 slide방식 애니메이션
+	// transition 거꾸로
+	box-shadow: 0px 3px 6px rgba(100, 104, 112, 0.1);
+	border-radius: 6px;
+	overflow: scroll;
+	width: auto;
+	height: auto;
+	transition: all 0.2s linear;
+	opacity: 1;
+	transform: translateY(0%);
+}
+
+@mixin closed() {
+  &.closed {
+		visibility: hidden;
+		opacity: 0;
+		&.slide {
+			&.up {
+				transform: translateY(calc(100% * 2));
+			}
+			&.down {
+				transform: translateY(-100%);
+			}	
+		}
+		&.spread {
+			height: 0;
+		}
+  }
+}
+
+.box {
+	@include box();
+	@include scroll();	
+  	@include closed();
+}
